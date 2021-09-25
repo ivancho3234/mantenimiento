@@ -34,7 +34,7 @@ public class ald_SMSSendPostCls {
             request.setBody(body);
             HttpResponse response = http.send(request);
             system.debug(response.getBody());
-            
+            message("Hello Word")
         } catch (Exception e) {
             
             System.debug(e.getMessage());
